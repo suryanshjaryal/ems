@@ -7,8 +7,8 @@ import java.sql.SQLException;
 public class DbConnection {
     public Connection getConnection() throws SQLException {
         String url = "jdbc:mysql://localhost:3306/ems";// H2 Database URL
-        String user = "admin";            // Database username
-        String password = "admin";          // Database password
+        String user = "root";            // Database username
+        String password = "admin123";          // Database password
 
         return DriverManager.getConnection(url, user, password);
     }
