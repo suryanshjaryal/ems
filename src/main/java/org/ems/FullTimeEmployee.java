@@ -6,7 +6,7 @@ public class FullTimeEmployee extends Employee{
     }
 
     @Override
-    public void calculateSalary() {
-
+    public Double calculateSalary() {
+return 0.0;
     }
 }

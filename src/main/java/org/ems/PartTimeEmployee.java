@@ -8,12 +8,12 @@ public class PartTimeEmployee extends Employee {
 
     }
 
-    public PartTimeEmployee(int id, String name, String typeOfEmployee, Double salary, Address address) {
-        super(id, name, typeOfEmployee, salary, address);
+    public PartTimeEmployee(int id, String name, String typeOfEmployee, Double hours, Address address) {
+        super(id, name, typeOfEmployee, hours, address);
     }
 
     @Override
-    public void calculateSalary() {
-
+    public Double calculateSalary() {
+return hours*100;
     }
 }

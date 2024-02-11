@@ -5,18 +5,18 @@ public abstract class Employee {
     private String name;
     private String typeOfEmployee;
 
-    private Double salary;
+    protected Double hours;
     Address address;
 
-    public Employee(int id, String name, String typeOfEmployee, Double salary, Address address) {
+    public Employee(int id, String name, String typeOfEmployee, Double hours, Address address) {
         this.id = id;
         this.name = name;
         this.typeOfEmployee = typeOfEmployee;
-        this.salary = salary;
+        this.hours = hours;
         this.address = address;
     }
 
-    public abstract void calculateSalary();
+    public abstract Double calculateSalary();
     public Employee(int id, String name) {
         this.id = id;
         this.name = name;
@@ -35,8 +35,8 @@ public abstract class Employee {
         return typeOfEmployee;
     }
 
-    public Double getSalary() {
-        return salary;
+    public Double getHours() {
+        return hours;
     }
 
     public Address getAddress() {
